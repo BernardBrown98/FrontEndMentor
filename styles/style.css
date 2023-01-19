@@ -1,0 +1,205 @@
+:root {
+    --bg-color: #FFF7F0;
+    --heading-text: #030303;
+    --body-text: #7A746E;
+    --purple-active: #755CDE;
+    --light-red: #EB7565;
+    --pink-active: #F39E9E;
+    --dark-purple: #553049;
+    --cyan: #61c4b7;
+    --summer-yellow: #f6a560;
+    --heading-font: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+}
+
+.lg-heading {
+
+    font-weight: 700;
+    color: var(--heading-text);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--heading-text);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h1+p {
+    margin-inline: auto;
+    max-width: 400px;
+}
+
+body {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--body-text);
+}
+
+p {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-inline: 16px;
+}
+
+nav>button {
+    align-self: center;
+}
+
+nav img {
+    height: 48px;
+}
+
+header {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-inline: 16px;
+}
+
+main {
+    margin-inline: 16px;
+}
+
+button {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 28px;
+    color: var(--bg-color);
+    background-color: var(--heading-text);
+    width: 176px;
+    height: 44px;
+    border-radius: 28px;
+    border: none;
+}
+
+.portals {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portal-group {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.single-portal {
+    border-radius: 8px;
+    /* all children divs are given position relative */
+    position: relative;
+}
+
+.single-portal p {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.single-portal img {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+#graphic-design {
+    height: 364px;
+    width: 100%;
+    background-color: var(--purple-active);
+}
+
+#ui,
+#apps {
+    flex-grow: 1;
+    height: 182px;
+}
+
+#illustrations,
+#photography,
+#motion-graphics {
+    height: 158px;
+    width: 100%;
+}
+
+#ui {
+    background-color: var(--summer-yellow);
+}
+
+#apps {
+    background-color: var(--pink-active);
+}
+
+#illustrations {
+    background-color: var(--light-red);
+}
+
+#photography {
+    background-color: var(--cyan);
+}
+
+#motion-graphics {
+    background-color: var(--dark-purple);
+}
+
+@media (min-width:768px) {
+    button {
+        width: 228px;
+        height: 56px;
+    }
+
+    nav img {
+        height: 64px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 51px;
+        margin-bottom: 27px;
+    }
+
+    h1+p {
+        margin-inline: auto;
+        max-width: 573px;
+    }
+
+    header {
+        margin-top: 64px;
+    }
+}
+
+@media (min-width:1280px) {
+    h1 {
+        font-size: 56px;
+        line-height: 70px;
+        margin-bottom: 23px;
+    }
+
+    h1+p {
+        margin-inline: auto;
+        max-width: 730px;
+    }
+
+    header {
+        margin-top: 66px;
+    }
+}
